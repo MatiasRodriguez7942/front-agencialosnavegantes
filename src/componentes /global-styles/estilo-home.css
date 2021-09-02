@@ -1,0 +1,26 @@
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Brandon", Brandon;
+}
+.titulo {
+  font-family: "Brandon", Brandon;
+  font-size: 75px;
+  line-height: 1.1em;
+  font-weight: 700;
+}
+.contenedor-body {
+  max-width: 1140px;
+}
+.body {
+  background: #031fff;
+  color: white;
+}
+.section-1 {
+  background: #fffd02;
+  color: white;
+}
+.imagen_home {
+  width: 500px;
+}
