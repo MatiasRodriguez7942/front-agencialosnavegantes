@@ -5,10 +5,10 @@ import { Container, Row, Col, Alert } from "react-bootstrap";
 import Slider from "../componentes /slider";
 import Layout from "../componentes /global-styles/layout"
 const IndexPage = () => {
-  const response = UsePosts();
-  const post = response.allStrapiPost.nodes;
+  // const response = UsePosts();
+  // const post = response.allStrapiPost.nodes;
 
-  console.log(post);
+  // console.log(post);
 
   return (
     <React.Fragment>
