@@ -31,9 +31,9 @@ const IndexPage = () => {
         nombre={NombreSection}
         contenido={Contenido}
         lista={Lista}
-        imagen="https://strapi-admin-navegantes.herokuapp.com/uploads/the_Equipo_Navegantes_min_369458e6eb.png"
+        imagen="https://agencialosnavegantes.s3.amazonaws.com/the_Equipo_Navegantes_min_d4178be4d1.png?295512"
       />
-      <SectionOlas imagen_pie_pagina="https://strapi-admin-navegantes.herokuapp.com/uploads/olas1_e3808d0860.png" />
+      <SectionOlas imagen_pie_pagina="https://agencialosnavegantes.s3.amazonaws.com/olas1_8ce9aca392.png?60083.5" />
       <Section2 nombre={nombreSection2} textoContenido={textoContenido}colorTexto="#fff " colorFondo=""/>
       <Section nombre="section2" />
 

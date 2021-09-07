@@ -31,7 +31,7 @@ class header extends Component {
                   <Link className="navbar-brand" to="/">
                     <img
                       style={imagen}
-                      src="https://strapi-admin-navegantes.herokuapp.com/uploads/sector1_1_55092d6839.png"
+                      src="https://agencialosnavegantes.s3.amazonaws.com/sector1_1_d2f01aa733.png?277251.90000000224"
                       className="img-fluid"
                     ></img>
                   </Link>
