@@ -11,7 +11,8 @@ const IndexPage = () => {
   const response = usePosts();
   const NombreSection = response.allStrapiHome.nodes[0].Nombre;
   const Contenido = response.allStrapiHome.nodes[0].subtitulo;
-  const nombreSection2 = response.allStrapiHome.nodes[0].Section[0].Titulo_seccion;
+  const nombreSection2 =
+    response.allStrapiHome.nodes[0].Section[0].Titulo_seccion;
   const textoContenido = response.allStrapiHome.nodes[0].Section[0].subtitulo;
   // console.log(response.allStrapiHome.nodes[0].Section[0].imagenes)
   // Arreglo lista
@@ -34,10 +35,15 @@ const IndexPage = () => {
         imagen="https://agencialosnavegantes.s3.amazonaws.com/the_Equipo_Navegantes_min_d4178be4d1.png?295512"
       />
       <SectionOlas imagen_pie_pagina="https://agencialosnavegantes.s3.amazonaws.com/olas1_8ce9aca392.png?60083.5" />
-      <Section2 nombre={nombreSection2} textoContenido={textoContenido}colorTexto="#fff " colorFondo=""/>
-      <Section nombre="section2" />
+      <Section2
+        nombre={nombreSection2}
+        textoContenido={textoContenido}
+        colorTexto="#fff "
+        colorFondo=""
+      />
+      <Section />
 
-      <Section nombre="section3" color="#2B1E77" />
+      <Section />
       <Footer />
     </React.Fragment>
   );
