@@ -1,58 +1,39 @@
-import React from "react";
+import React, { useState } from "react";
 import Header from "../componentes /header";
-import UsePosts from "../hooks/usePosts";
-import { Container, Row, Col, Alert } from "react-bootstrap";
-import Slider from "../componentes /slider";
-import Layout from "../componentes /global-styles/layout"
+import Section from "../componentes /section";
+import SectionOlas from "../componentes /sectionolas";
+import Footer from "../componentes /footer";
+import usePosts from "../hooks/usePosts";
+
 const IndexPage = () => {
-  // const response = UsePosts();
-  // const post = response.allStrapiPost.nodes;
-
-  // console.log(post);
-
+  // obtengo valores  api
+  const response = usePosts();
+  const NombreSection = response.allStrapiHome.nodes[0].Nombre;
+  const Contenido = response.allStrapiHome.nodes[0].subtitulo;
+  // Arreglo lista
+  let Lista = [
+    <li key="id1">Impulsamos tus ventas en menos de 30 días.</li>,
+    <li key="id2">Maximizamos tu facturación en menos de 90 días.</li>,
+    <li key="id3">Escalamos tus resultados en el plazo de 180 días.</li>,
+    <li key="id4">Convertimos el 2021 en tu mejor año.</li>,
+  ];
   return (
     <React.Fragment>
-      {/* <Header /> */}
-        <div className="body">
-        <Container className="contenedor-body">
-          <Row className="justify-content-center" >
-            <Col sm={6}>
-              <h2 className="titulo">
-              Navegantes de <br></br>Medios Digitales
-              </h2>
-            </Col>
-            <Col sm={6}>
-              <img
-               className="img-fluid imagen_home"
-              src="" 
-              />
-              {/* {post.map((post) => (
-                <div>
-                  <img
-                    className="d-block w-100"
-                    src={`http://localhost:1337${post.Imagen.url}`}
-                    alt="First slide"
-                  />
-                </div>
-              ))} */}
-            </Col>
-          </Row>
-          {/* <Slider/> */}
-        </Container>
-      </div>
-      <div className="section">
-<h2 className="text-center">Agencia de Marketing Digital
-</h2>
-      </div>
-      <div className="section-1">
-       ANALITICA Y  PERFORMANCE
-      </div>
+      <Header />
 
-      {/* {post.map(post=>(
-     <div>
-       <h3 key="post.id">{post.Titulo}</h3>
-     </div>
-     ))} */}
+      <Section
+        color="#031fff"
+        color_texto="#fff"
+        nombre={NombreSection}
+        contenido={Contenido}
+        lista={Lista}
+        imagen="https://strapi-admin-navegantes.herokuapp.com/uploads/the_Equipo_Navegantes_min_369458e6eb.png"
+      />
+      <SectionOlas imagen_pie_pagina="https://strapi-admin-navegantes.herokuapp.com/uploads/olas1_e3808d0860.png" />
+      <Section nombre="section2" color="#fff " />
+
+      <Section nombre="section3" color="#2B1E77" />
+      <Footer />
     </React.Fragment>
   );
 };

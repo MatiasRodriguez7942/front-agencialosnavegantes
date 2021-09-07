@@ -1,13 +1,13 @@
 import React from "react";
 import Header from "../componentes /header";
 
-const tripulacion = () => {
+const desarrolloweb = () => {
   return (
     <div>
       <Header></Header>
-      HOLA TRIPULACIÓN
+      HOLA DESARROLLO WEB
     </div>
   );
 };
 
-export default tripulacion;
+export default desarrolloweb;

@@ -1,13 +1,14 @@
 import React from "react";
 import Header from "../componentes /header";
-
-const tripulacion = () => {
+import Footer from "../componentes /footer"
+const blog = () => {
   return (
     <div>
       <Header></Header>
-      HOLA TRIPULACIÓN
+      HOLA BLOCK
+      <Footer></Footer>
     </div>
   );
 };
 
-export default tripulacion;
+export default blog;

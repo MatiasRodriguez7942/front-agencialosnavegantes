@@ -1,25 +1,9 @@
 import React from "react";
 import { Carousel } from "react-bootstrap";
-import UsePosts from "../hooks/usePosts";
-import "./global-styles/estilo-home.css"
+import "./global-styles/estilo-home.css";
 const slider = () => {
-  const response = UsePosts();
-  const post = response.allStrapiPost.nodes;
-
-  console.log(post);
   return (
     <div>
-      {/* {post.map((post) => (
-        <div>
-          <h3 key="post.id">{post.Titulo}-{post.Imagen.url}</h3>
-          <img
-            className="d-block w-100"
-            src= {`http://localhost:1337${post.Imagen.url}`}
-            alt="First slide"
-          />
-        </div>
-      ))} */}
-
       <Carousel>
         <Carousel.Item interval={1000}>
           <img
