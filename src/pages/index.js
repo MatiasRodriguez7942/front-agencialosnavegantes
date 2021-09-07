@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Header from "../componentes /header";
 import Section from "../componentes /section";
 import SectionOlas from "../componentes /sectionolas";
+import Section2 from "../componentes /section2";
 import Footer from "../componentes /footer";
 import usePosts from "../hooks/usePosts";
 
@@ -10,6 +11,9 @@ const IndexPage = () => {
   const response = usePosts();
   const NombreSection = response.allStrapiHome.nodes[0].Nombre;
   const Contenido = response.allStrapiHome.nodes[0].subtitulo;
+  const nombreSection2 = response.allStrapiHome.nodes[0].Section[0].Titulo_seccion;
+  const textoContenido = response.allStrapiHome.nodes[0].Section[0].subtitulo;
+  // console.log(response.allStrapiHome.nodes[0].Section[0].imagenes)
   // Arreglo lista
   let Lista = [
     <li key="id1">Impulsamos tus ventas en menos de 30 días.</li>,
@@ -30,7 +34,8 @@ const IndexPage = () => {
         imagen="https://strapi-admin-navegantes.herokuapp.com/uploads/the_Equipo_Navegantes_min_369458e6eb.png"
       />
       <SectionOlas imagen_pie_pagina="https://strapi-admin-navegantes.herokuapp.com/uploads/olas1_e3808d0860.png" />
-      <Section nombre="section2" color="#fff " />
+      <Section2 nombre={nombreSection2} textoContenido={textoContenido}colorTexto="#fff " colorFondo=""/>
+      <Section nombre="section2" />
 
       <Section nombre="section3" color="#2B1E77" />
       <Footer />
