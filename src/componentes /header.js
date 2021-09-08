@@ -3,6 +3,9 @@ import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import { Link } from "gatsby";
 
 import { Nav, Container, Row, Col } from "react-bootstrap";
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@100&display=swap');
+</style>
 //estilo
 const colorNavBar = {
   backgroundColor: "#031fff",
@@ -47,7 +50,7 @@ class header extends Component {
                   </Link>
                 </Nav.Item>
                 <Nav.Item>
-                  <Link className="navbar-brand" to="/desarrolloweb">
+                  <Link className="navbar-brand" to="https://ecommerce.agencialosnavegantes.cl/">
                     Desarrollo web
                   </Link>
                 </Nav.Item>

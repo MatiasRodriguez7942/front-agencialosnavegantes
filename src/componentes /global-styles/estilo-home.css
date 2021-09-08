@@ -1,15 +1,15 @@
-body{
-  font-family: "Brandon", Brandon !important;
+body {
+  font-family: "Urbanist", sans-serif;
 }
 
 h1,
 h2,
 h3,
 h4 {
-  font-family: "Brandon", Brandon;
+  font-family: "Urbanist", sans-serif;
 }
 .titulo {
-  font-family: "Brandon", Brandon;
+  font-family: "Urbanist", sans-serif;
   font-size: 75px;
   line-height: 1.1em;
   font-weight: 700;
@@ -28,9 +28,26 @@ h4 {
 .imagen_home {
   width: 500px;
 }
-
+hr {
+  opacity: 1 !important;
+}
+ul li {
+  list-style: none;
+  padding: 0 !important;
+}
+ul {
+  padding: 0 !important;
+}
+.contenedor-footer {
+  padding-top: 30px;
+  max-width: 1140px !important;
+}
+.col-sm-4 {
+  padding: 0px !important;
+  margin: 0px !important;
+}
 @media (max-width: 600px) {
-  .titulo{
+  .titulo {
     font-size: 20px !important;
   }
 }

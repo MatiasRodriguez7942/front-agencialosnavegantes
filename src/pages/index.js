@@ -41,9 +41,10 @@ const IndexPage = () => {
         colorTexto="#fff "
         colorFondo=""
       />
-      <Section />
+      <Section color="#290877" />
 
-      <Section />
+      <Section color="#FFFD02"/>
+      <Section color="#FA5983"/>
       <Footer />
     </React.Fragment>
   );
