@@ -21,7 +21,7 @@ const section = (props) => {
               className="titulo"
               style={{
                 color: props.color_texto,
-                fontSize: "75px",
+                fontSize: "7Opx",
                 lineHeight: "1.1em",
                 fontWeight: "700",
               }}
@@ -31,7 +31,7 @@ const section = (props) => {
             <ul
               style={{
                 color: props.color_texto,
-                fontSize:"21px",
+                fontSize: "21px",
               }}
             >
               {props.lista}
@@ -39,10 +39,15 @@ const section = (props) => {
             <p
               style={{
                 color: props.color_texto,
+                fontSize: "20px",
               }}
             >
               {props.contenido}
             </p>
+            <h2 style={{ color: props.color_texto ,fontSize: "30px",}}>{props.textoSubtitulo}</h2>
+            <a href="#agencia" style={{ color: props.color_texto ,fontSize:"25px",fontWeight: "700",}}>
+              {props.textoBtn}
+            </a>
           </Col>
           <Col sm={6} style={estiloImagen}>
             <img className="img-fluid" src={props.imagen}></img>

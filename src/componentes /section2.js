@@ -4,14 +4,15 @@ import { Container, Row, Col } from "react-bootstrap";
 
 const section2 = (props) => {
   const response = UsePosts();
-  //   const section = response.allStrapiHome.nodes[0].Section[0].imagenes[0].name;
+  const Nombresection2 = response.allStrapiHome.nodes[0].Section[1].Titulo_seccion;
   const section = response.allStrapiHome.nodes[0].Section[0].imagenes;
+  const Section2 = response.allStrapiHome.nodes[0].Section[1].imagenes;
 
-  console.log(section);
   const texto = {
     fontSize: "50px",
     color: "#212529",
     fontWeight: "700",
+    padding: "20px",
   };
   const textoContenido = {
     fontSize: "20px",
@@ -20,6 +21,7 @@ const section2 = (props) => {
   const centrarImagenes = {
     display: "flex",
     justifyContent: "center",
+    alignItems: "center",
   };
 
   return (
@@ -31,10 +33,32 @@ const section2 = (props) => {
         {props.textoContenido}
       </p>
       <div style={centrarImagenes}>
-        <Row>
+        <Row style={{ justifyContent: "center", alignItems: "center" }}>
           {section.map((item, i) => (
-            <Col  xs={6} md={2}  sm={6} key={i}>
-            <img key={i} className="img-fluid" src={item.url} width={170}></img>
+            <Col xs={6} md={2} sm={6} key={i}>
+              <img
+                key={i}
+                className="img-fluid"
+                src={item.url}
+                width={170}
+              ></img>
+            </Col>
+          ))}
+        </Row>
+      </div>
+      <h2 className="text-center" style={texto}>
+        {Nombresection2}
+      </h2>
+      <div style={centrarImagenes}>
+        <Row className="row-imagenes">
+          {Section2.map((item, i) => (
+            <Col xs={6} md={2} sm={6} key={i}>
+              <img
+                key={i}
+                className="img-fluid"
+                src={item.url}
+                width={170}
+              ></img>
             </Col>
           ))}
         </Row>

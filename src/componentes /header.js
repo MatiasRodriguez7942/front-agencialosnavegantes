@@ -24,7 +24,6 @@ class header extends Component {
         <Container className="contenedor-body">
           <Row className="row align-items-center">
             <Col sm={8}>
-              {" "}
               <Nav
                 className="navbar navbar-expand-lg navbar-light"
                 activeKey="/home"
@@ -96,7 +95,7 @@ class header extends Component {
                     aria-expanded="false"
                     aria-label="Toggle navigation"
                   >
-                    <span className="navbar-toggler-icon"></span>
+                    <img style={{width: "25%",}}src="https://agencialosnavegantes.s3.amazonaws.com/menu_hamburguesa_880ab0ce56.png"></img>
                   </button>
                 </nav>
               </div>
