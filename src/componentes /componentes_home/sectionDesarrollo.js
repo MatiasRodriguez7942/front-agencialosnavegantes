@@ -5,10 +5,10 @@ import UsePosts from "../../hooks/usePosts";
 const sectionDesarrollo = (props) => {
     const response = UsePosts();
     const sectionNombre =
-      response.allStrapiHome.nodes[0].Section[2].Titulo_seccion;
-    const contenido = response.allStrapiHome.nodes[0].Section[2].Texto;
-    const subtitulo = response.allStrapiHome.nodes[0].Section[2].subtitulo;
-    const imagenes = response.allStrapiHome.nodes[0].Section[2].imagenes;
+      response.allStrapiHome.nodes[0].Section[4].Titulo_seccion;
+    const contenido = response.allStrapiHome.nodes[0].Section[4].Texto;
+    const subtitulo = response.allStrapiHome.nodes[0].Section[4].subtitulo;
+    const imagenes = response.allStrapiHome.nodes[0].Section[4].imagenes;
     return (
         <div style={{ backgroundColor: props.color_fondo, padding: "50px 0" }}>
       <Container className="contenedor-body">
@@ -38,7 +38,7 @@ const sectionDesarrollo = (props) => {
             </p>
             <p
               style={{
-                color: "#54595f",
+                color: "#fff",
                 textAlign: "justify",
                 fontSize: "20px",
               }}

@@ -23,7 +23,7 @@ class header extends Component {
       <div style={colorNavBar}>
         <Container className="contenedor-body">
           <Row className="row align-items-center">
-            <Col sm={8}>
+            <Col sm={8} xs={6}>
               <Nav
                 className="navbar navbar-expand-lg navbar-light"
                 activeKey="/home"
@@ -75,7 +75,7 @@ class header extends Component {
                 </Nav.Item> */}
               </Nav>
             </Col>
-            <Col sm={4}>
+            <Col sm={4} xs={6}>
               <div className="pos-f-t">
                 <div className="collapse" id="navbarToggleExternalContent">
                   <div className="bg-dark p-4">

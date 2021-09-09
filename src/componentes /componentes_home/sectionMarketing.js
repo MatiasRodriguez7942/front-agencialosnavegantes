@@ -16,7 +16,7 @@ const sectionMarketing = (props) => {
           className="justify-content-center"
           style={{ justifyContent: "center", alignItems: "center" }}
         >
-          <Col sm={6}>
+          <Col sm={6} className="order-xs-12 order-md-1">
             <Row style={{ justifyContent: "center", alignItems: "center" }}>
               {imagenes.map((item, i) => (
                 <Col xs={6} md={6} sm={6} key={i}>
@@ -30,7 +30,7 @@ const sectionMarketing = (props) => {
               ))}
             </Row>
           </Col>
-          <Col sm={6}>
+          <Col sm={6} className="order-xs-1 order-md-2">
             <h2
               className="titulo_h2"
               style={{

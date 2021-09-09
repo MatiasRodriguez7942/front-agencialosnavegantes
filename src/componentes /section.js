@@ -15,7 +15,7 @@ const section = (props) => {
   return (
     <div style={{ backgroundColor: props.color }}>
       <Container className="contenedor-body">
-        <Row className="justify-content-center">
+        <Row className="justify-content-center" id="columnas">
           <Col sm={6}>
             <h2
               className="titulo"
@@ -46,7 +46,7 @@ const section = (props) => {
             </p>
             <h2 style={{ color: props.color_texto ,fontSize: "30px",}}>{props.textoSubtitulo}</h2>
             <a href="#agencia" style={{ color: props.color_texto ,fontSize:"25px",fontWeight: "700",}}>
-              {props.textoBtn}
+            {props.iconos}{props.textoBtn}
             </a>
           </Col>
           <Col sm={6} style={estiloImagen}>

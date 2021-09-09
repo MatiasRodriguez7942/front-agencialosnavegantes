@@ -8,6 +8,7 @@ import usePosts from "../hooks/usePosts";
 import SectionMarketing from "../componentes /componentes_home/sectionMarketing";
 import SectionAnaliticaPerformance from "../componentes /componentes_home/sectionAnaliticaPerformance";
 import SectionDesarrollo from "../componentes /componentes_home/sectionDesarrollo";
+import Slider from "../componentes /componentes_home/slider";
 
 const IndexPage = () => {
   // obtengo valores  api
@@ -49,6 +50,8 @@ const IndexPage = () => {
       Convertimos el 2021 en tu mejor año.
     </li>,
   ];
+  let iconos = [<i className="bi bi-chevron-down"></i>];
+  let urlBoton = "https://www.google.com/partners/agency?id=4329839845"
   return (
     <React.Fragment>
       <Header />
@@ -62,9 +65,10 @@ const IndexPage = () => {
         imagen="https://agencialosnavegantes.s3.amazonaws.com/the_Equipo_Navegantes_min_d4178be4d1.png?295512"
         textoSubtitulo="¿Llevemos tus resultados al próximo nivel?"
         textoBtn="Conócenos!"
+        iconos={iconos}
       />
       <SectionOlas imagen_pie_pagina="https://agencialosnavegantes.s3.amazonaws.com/olas1_8ce9aca392.png?60083.5" />
-      <div id="agencia" style={{marginTop:"30px",marginBottom:"50px",}}>
+      <div id="agencia" style={{ marginTop: "30px", marginBottom: "50px" }}>
         <Section2
           nombre={nombreSection2}
           textoContenido={textoContenido}
@@ -73,13 +77,12 @@ const IndexPage = () => {
         />
       </div>
       <SectionMarketing color_fondo="#290877" />
-      <SectionAnaliticaPerformance  color_fondo="#FFFD02"/>
- 
-
+      <SectionAnaliticaPerformance color_fondo="#FFFD02" />
       <Section color="#FFFD02" />
       <Section color="#FA5983" />
       <SectionDesarrollo color_fondo="#ED5682" />
- 
+      <Slider />
+      {/* <Section NombreSection={} contenido1={} contenido2={} imagen={} botonTexto={} urlBoton={urlBoton}/> */}
       <Footer />
     </React.Fragment>
   );

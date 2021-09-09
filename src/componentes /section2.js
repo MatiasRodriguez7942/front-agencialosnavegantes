@@ -4,7 +4,8 @@ import { Container, Row, Col } from "react-bootstrap";
 
 const section2 = (props) => {
   const response = UsePosts();
-  const Nombresection2 = response.allStrapiHome.nodes[0].Section[1].Titulo_seccion;
+  const Nombresection2 =
+    response.allStrapiHome.nodes[0].Section[1].Titulo_seccion;
   const section = response.allStrapiHome.nodes[0].Section[0].imagenes;
   const Section2 = response.allStrapiHome.nodes[0].Section[1].imagenes;
 
@@ -26,9 +27,18 @@ const section2 = (props) => {
 
   return (
     <div>
-      <h2 className="text-center" style={texto}>
-        {props.nombre}
-      </h2>
+      <Row>
+        <Col xs={4} md={2} sm={4}></Col>
+        <Col xs={4} md={8} sm={4}>
+          <h2 className="text-center" style={texto}>
+            {props.nombre}
+          </h2>
+        </Col>
+        <Col xs={4} md={2} sm={4} >
+          <img src="https://agencialosnavegantes.s3.amazonaws.com/circulos_6834ac04e9.png?37499.5" style={{width:"50%",}}></img>
+        </Col>
+      </Row>
+
       <p className="text-center" style={textoContenido}>
         {props.textoContenido}
       </p>

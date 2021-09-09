@@ -16,12 +16,15 @@
   },
   "dependencies": {
     "bootstrap": "^5.1.0",
+    "bootstrap-icons": "^1.5.0",
     "gatsby": "^3.12.1",
     "gatsby-source-strapi": "^1.0.2",
+    "owl.carousel": "^2.3.4",
     "react": "^17.0.1",
     "react-bootstrap": "^1.6.1",
     "react-bootstrap-validation": "^0.1.11",
     "react-dom": "^17.0.1",
-    "reactstrap": "^8.9.0"
+    "reactstrap": "^8.9.0",
+    "swiper": "^7.0.5"
   }
 }
