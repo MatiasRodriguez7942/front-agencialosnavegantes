@@ -1,5 +1,5 @@
 import React from "react"
-import "./estilo-home.css"
+import "./estilo.css"
 export default function Layout({ children }) {
   return <div>{children}</div>
 }

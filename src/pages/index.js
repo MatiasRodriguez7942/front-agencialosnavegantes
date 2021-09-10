@@ -9,7 +9,8 @@ import SectionMarketing from "../componentes /componentes_home/sectionMarketing"
 import SectionAnaliticaPerformance from "../componentes /componentes_home/sectionAnaliticaPerformance";
 import SectionDesarrollo from "../componentes /componentes_home/sectionDesarrollo";
 import Slider from "../componentes /componentes_home/slider";
-
+import SectionNosotros from "../componentes /componentes_home/sectionNosotros";
+import SectionSumate from "../componentes /componentes_home/sectionSumate";
 const IndexPage = () => {
   // obtengo valores  api
   const response = usePosts();
@@ -18,11 +19,17 @@ const IndexPage = () => {
   const nombreSection2 =
     response.allStrapiHome.nodes[0].Section[0].Titulo_seccion;
   const textoContenido = response.allStrapiHome.nodes[0].Section[0].subtitulo;
-  // console.log(response.allStrapiHome.nodes[0].Section[0].imagenes)
+  const TituloSection =
+    response.allStrapiHome.nodes[0].Section[6].Titulo_seccion;
+  const Subtitulo = response.allStrapiHome.nodes[0].Section[6].subtitulo;
+  const Contenido2 = response.allStrapiHome.nodes[0].Section[6].Texto;
+  const ImagenSection =
+    response.allStrapiHome.nodes[0].Section[6].imagenes[0].url;
   // Arreglo lista
   let Lista = [
     <li key="id1">
       <img
+        key="id1"
         className="img-check"
         src="https://agencialosnavegantes.s3.amazonaws.com/check_2fe11dda57.png"
       ></img>
@@ -30,6 +37,7 @@ const IndexPage = () => {
     </li>,
     <li key="id2">
       <img
+        key="id2"
         className="img-check"
         src="https://agencialosnavegantes.s3.amazonaws.com/check_2fe11dda57.png"
       ></img>
@@ -37,6 +45,7 @@ const IndexPage = () => {
     </li>,
     <li key="id3">
       <img
+        key="id3"
         className="img-check"
         src="https://agencialosnavegantes.s3.amazonaws.com/check_2fe11dda57.png"
       ></img>
@@ -44,6 +53,7 @@ const IndexPage = () => {
     </li>,
     <li key="id4">
       <img
+        key="id4"
         className="img-check"
         src="https://agencialosnavegantes.s3.amazonaws.com/check_2fe11dda57.png"
       ></img>
@@ -51,7 +61,7 @@ const IndexPage = () => {
     </li>,
   ];
   let iconos = [<i className="bi bi-chevron-down"></i>];
-  let urlBoton = "https://www.google.com/partners/agency?id=4329839845"
+  let urlBoton = "https://www.google.com/partners/agency?id=4329839845";
   return (
     <React.Fragment>
       <Header />
@@ -78,11 +88,21 @@ const IndexPage = () => {
       </div>
       <SectionMarketing color_fondo="#290877" />
       <SectionAnaliticaPerformance color_fondo="#FFFD02" />
-      <Section color="#FFFD02" />
-      <Section color="#FA5983" />
+
       <SectionDesarrollo color_fondo="#ED5682" />
       <Slider />
-      {/* <Section NombreSection={} contenido1={} contenido2={} imagen={} botonTexto={} urlBoton={urlBoton}/> */}
+      <Section
+        color_texto="#fff"
+        color="#031FFF"
+        nombreSection={TituloSection}
+        contenido1={Subtitulo}
+        contenido2={Contenido2}
+        imagen={ImagenSection}
+        urlBoton={urlBoton}
+        textoBoton="Ver Insignia >>"
+      />
+      <SectionNosotros/>
+      <SectionSumate/>
       <Footer />
     </React.Fragment>
   );

@@ -71,6 +71,9 @@ a {
   justify-content: center;
   align-items: center;
 }
+.titulo2{
+  font-size: 60px;
+}
 @media (max-width: 600px) {
   .titulo {
     font-size: 20px !important;

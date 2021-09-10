@@ -18,7 +18,7 @@ const slider = () => {
     response.allStrapiHome.nodes[0].Section[5].Titulo_seccion;
   const imagenes = response.allStrapiHome.nodes[0].Section[5].imagenes;
   const contenido = response.allStrapiHome.nodes[0].Section[5].Texto;
-  console.log(imagenes);
+  
   return (
     <div>
       <div style={{ backgroundColor: "#F9F9FA", padding: "40px" }}>
@@ -56,7 +56,7 @@ const slider = () => {
                     sm={11}
                     style={{
                       backgroundColor: "#0100ff",
-                      padding: "15px",
+                      padding: "25px",
                       textAlign: "center",
                     }}
                   >
@@ -79,7 +79,7 @@ const slider = () => {
                         }}
                       >
                         <span>Conoce a algunos</span>{" "}
-                        <i class="bi bi-arrow-right-short"></i>
+                        <i className="bi bi-arrow-right-short"></i>
                       </a>
                     </div>
                   </Col>
@@ -134,12 +134,13 @@ const slider = () => {
             >
               Solicita portafolio aquí
             </span>
-            <i class="bi bi-arrow-right-short"></i>
+            <i className="bi bi-arrow-right-short"></i>
           </a>
         </div>
       </div>
       <div style={{ backgroundColor: "#fff" }}>
         <div style={{ padding: "20px" }} className="text-center">
+          <img src="https://agencialosnavegantes.s3.amazonaws.com/imgvideo2_1_ae9da2db4e.jpeg"></img>
           <h2
             className="text-center"
             style={{ color: "#212529", fontSize: "30px" }}
@@ -161,7 +162,7 @@ const slider = () => {
             >
               Visita nuestro Canal
             </span>
-            <i class="bi bi-arrow-right-short"></i>
+            <i className="bi bi-arrow-right-short"></i>
           </a>
         </div>
       </div>
