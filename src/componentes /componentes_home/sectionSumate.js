@@ -30,6 +30,7 @@ const sectionSumate = () => {
               <br></br>
               <p>{sectionDescripcion1}</p>
               <br></br>
+              
 
               <Link className="navbar-brand" to="/tripulacion">
                 Comunicate con Nosotros
