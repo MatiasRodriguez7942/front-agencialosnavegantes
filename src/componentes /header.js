@@ -4,8 +4,9 @@ import { Link } from "gatsby";
 
 import { Nav, Container, Row, Col } from "react-bootstrap";
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@100&display=swap');
-</style>
+  @import
+  url('https://fonts.googleapis.com/css2?family=Urbanist:wght@100&display=swap');
+</style>;
 //estilo
 const colorNavBar = {
   backgroundColor: "#031fff",
@@ -16,7 +17,7 @@ const imagen = {
 };
 const centarNavBar = {
   justifyContent: "center",
-}
+};
 class header extends Component {
   render() {
     return (
@@ -95,7 +96,10 @@ class header extends Component {
                     aria-expanded="false"
                     aria-label="Toggle navigation"
                   >
-                    <img style={{width: "25%",}}src="https://agencialosnavegantes.s3.amazonaws.com/menu_hamburguesa_880ab0ce56.png"></img>
+                    <img
+                      style={{ width: "25%" }}
+                      src="https://agencialosnavegantes.s3.amazonaws.com/menu_hamburguesa_880ab0ce56.png"
+                    ></img>
                   </button>
                 </nav>
               </div>

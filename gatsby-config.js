@@ -6,11 +6,10 @@ module.exports = {
         {
             resolve: `gatsby-source-strapi`,
             options: {
-              apiURL: `https://strapi-admin-navegantes.herokuapp.com`,
+              apiURL: `https://los-navegantes.herokuapp.com`,
               queryLimit: 1000, // Defaults to 100
               collectionTypes: [`post`], 
-              // singleTypes: [`home`,`mkt`,`tripulacion`],
-              singleTypes: [`home`],
+              singleTypes: [`home`,`mkt`,`tripulacion`,`analitica`],
             },
           },
     ]

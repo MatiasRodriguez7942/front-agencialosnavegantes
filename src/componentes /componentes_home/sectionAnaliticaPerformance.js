@@ -1,15 +1,12 @@
 import React from 'react'
-import UsePosts from "../../hooks/usePosts";
 import { Container, Row, Col } from "react-bootstrap";
+import UseHome from "../../hooks/useHome";
 const sectionAnaliticaPerformance = (props) => {
-    const response = UsePosts();
-    const sectionNombre =
-      response.allStrapiHome.nodes[0].Section[3].Titulo_seccion;
-    const contenido = response.allStrapiHome.nodes[0].Section[3].Texto;
-    const subtitulo = response.allStrapiHome.nodes[0].Section[3].subtitulo;
-    const imagenes = response.allStrapiHome.nodes[0].Section[3].imagenes;
+  const response = UseHome();
+  const data = response.allStrapiHome.nodes[0];
+  console.log(data)
     return (
-        <div style={{ backgroundColor: props.color_fondo, padding: "50px 0" }}>
+        <div style={{ backgroundColor: "#FFFD02", padding: "50px 0" }}>
       <Container className="contenedor-body">
         <Row
           className="justify-content-center"
@@ -24,7 +21,6 @@ const sectionAnaliticaPerformance = (props) => {
                 color: "#280077",
               }}
             >
-              {sectionNombre}
             </h2>
             <p
               style={{
@@ -33,7 +29,6 @@ const sectionAnaliticaPerformance = (props) => {
                 fontSize: "20px",
               }}
             >
-              {subtitulo}
             </p>
             <p
               style={{
@@ -42,7 +37,6 @@ const sectionAnaliticaPerformance = (props) => {
                 fontSize: "20px",
               }}
             >
-              {contenido}
             </p>
             <a
               href=""
@@ -52,7 +46,7 @@ const sectionAnaliticaPerformance = (props) => {
             </a>
           </Col>
           <Col sm={6}>
-            <Row style={{ justifyContent: "center", alignItems: "center" }}>
+            {/* <Row style={{ justifyContent: "center", alignItems: "center" }}>
               {imagenes.map((item, i) => (
                 <Col xs={6} md={6} sm={6} key={i}>
                   <img
@@ -63,7 +57,7 @@ const sectionAnaliticaPerformance = (props) => {
                   ></img>
                 </Col>
               ))}
-            </Row>
+            </Row> */}
           </Col>
         </Row>
       </Container>

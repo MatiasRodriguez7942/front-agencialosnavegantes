@@ -8,7 +8,7 @@ const sectionolas = (props) => {
   return (
     
     <div >
-      <img className="img-fluid"  style={estiloImagen} src={props.imagen_pie_pagina}></img>
+      <img className="img-fluid"  style={estiloImagen} src="https://agencia-navegantes.s3.amazonaws.com/up_2_4d7a802b0d.png"></img>
     </div>
   );
 };
