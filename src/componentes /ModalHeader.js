@@ -4,7 +4,7 @@ import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import { Link } from "gatsby";
 function ModalHeader() {
   const [show, setShow] = React.useState(false);
- 
+
   return (
     <div>
       <div className="pos-f-t">
@@ -41,76 +41,69 @@ function ModalHeader() {
         aria-labelledby="example-custom-modal-styling-title"
       >
         <Modal.Body>
-          <Row>
-            <Col sm={4}></Col>
-            <Col sm={4}>
-              {" "}
-              <Nav.Item style={{marginTop:"25%",}} id="myDIV">
-                <Link
-                  className="navbar-brand item-menu"
-                  to="/"
-                  style={{ fontSize: "32px"}}
-                >
-                  Inicio
-                </Link>
-              </Nav.Item>
-              <Nav.Item className="navbar-brand">
-                <Link
-                  className="navbar-brand item-menu"
-                  to="/tripulacion"
-                  style={{ fontSize: "32px" }}
-                >
-                  Tripulación
-                </Link>
-              </Nav.Item>
-              <Nav.Item>
-                <Link
-                  className="navbar-brand item-menu"
-                  to="https://ecommerce.agencialosnavegantes.cl/"
-                  style={{ fontSize: "32px" }}
-                >
-                  Desarrollo web
-                </Link>
-              </Nav.Item>
-              <Nav.Item>
-                <Link
-                  className="navbar-brand item-menu"
-                  to="/marketingdigital"
-                  style={{ fontSize: "32px" }}
-                >
-                  Marketing Digital
-                </Link>
-              </Nav.Item>
-              <Nav.Item>
-                <Link
-                  className="navbar-brand item-menu" 
-                  to="/analiticayperformance"
-                  style={{ fontSize: "32px" }}
-                >
-                  Anlítica y Performance
-                </Link>
-              </Nav.Item>
-              <Nav.Item>
-                <Link
-                  className="navbar-brand item-menu"
-                  to="/blog"
-                  style={{ fontSize: "32px" }}
-                >
-                  Blog
-                </Link>
-              </Nav.Item>
-              <Nav.Item>
-                <Link
-                  className="navbar-brand item-menu"
-                  to="/contacto"
-                  style={{ fontSize: "32px" }}
-                >
-                  Contacto
-                </Link>
-              </Nav.Item>
-            </Col>
-            <Col sm={4}></Col>
-          </Row>
+          <Nav.Item style={{ marginTop: "10%" }} id="myDIV">
+            <Link
+              className="navbar-brand item-menu"
+              to="/"
+              style={{ fontSize: "32px" }}
+            >
+              Inicio
+            </Link>
+          </Nav.Item>
+          <Nav.Item className="navbar-brand">
+            <Link
+              className="navbar-brand item-menu"
+              to="/tripulacion"
+              style={{ fontSize: "32px" }}
+            >
+              Tripulación
+            </Link>
+          </Nav.Item>
+          <Nav.Item>
+            <Link
+              className="navbar-brand item-menu"
+              to="https://ecommerce.agencialosnavegantes.cl/"
+              style={{ fontSize: "32px" }}
+            >
+              Desarrollo web
+            </Link>
+          </Nav.Item>
+          <Nav.Item>
+            <Link
+              className="navbar-brand item-menu"
+              to="/marketingdigital"
+              style={{ fontSize: "32px" }}
+            >
+              Marketing Digital
+            </Link>
+          </Nav.Item>
+          <Nav.Item>
+            <Link
+              className="navbar-brand item-menu"
+              to="/analiticayperformance"
+              style={{ fontSize: "32px" }}
+            >
+              Anlítica y Performance
+            </Link>
+          </Nav.Item>
+          <Nav.Item>
+            <Link
+              className="navbar-brand item-menu"
+              to="/blog"
+              style={{ fontSize: "32px" }}
+            >
+              Blog
+            </Link>
+          </Nav.Item>
+          <Nav.Item>
+            <Link
+              className="navbar-brand item-menu"
+              to="/contacto"
+              style={{ fontSize: "32px" }}
+            >
+              Contacto
+            </Link>
+          </Nav.Item>
         </Modal.Body>
       </Modal>
     </div>
