@@ -1,12 +1,9 @@
 import React, { Component } from "react";
 import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import { Link } from "gatsby";
-
+import "../componentes /global-styles/layout";
 import { Nav, Container, Row, Col } from "react-bootstrap";
-<style>
-  @import
-  url('https://fonts.googleapis.com/css2?family=Urbanist:wght@100&display=swap');
-</style>;
+import Modal from "./ModalHeader"
 //estilo
 const colorNavBar = {
   backgroundColor: "#031fff",
@@ -24,7 +21,7 @@ class header extends Component {
       <div style={colorNavBar}>
         <Container className="contenedor-body">
           <Row className="row align-items-center">
-            <Col sm={8} xs={6}>
+            <Col sm={8} xs={8}>
               <Nav
                 className="navbar navbar-expand-lg navbar-light"
                 activeKey="/home"
@@ -39,70 +36,11 @@ class header extends Component {
                     ></img>
                   </Link>
                 </Nav.Item>
-                {/* <Nav.Item>
-                  <Link className="navbar-brand" to="/">
-                    Inicio
-                  </Link>
-                </Nav.Item>
-                <Nav.Item className="navbar-brand">
-                  <Link className="navbar-brand" to="/tripulacion">
-                    Tripulación
-                  </Link>
-                </Nav.Item>
-                <Nav.Item>
-                  <Link className="navbar-brand" to="https://ecommerce.agencialosnavegantes.cl/">
-                    Desarrollo web
-                  </Link>
-                </Nav.Item>
-                <Nav.Item>
-                  <Link className="navbar-brand" to="/marketingdigital">
-                    Marketing Digital
-                  </Link>
-                </Nav.Item>
-                <Nav.Item>
-                  <Link className="navbar-brand" to="/analiticayperformance">
-                    Anlítica y Performance
-                  </Link>
-                </Nav.Item>
-                <Nav.Item>
-                  <Link className="navbar-brand" to="/blog">
-                    Blog
-                  </Link>
-                </Nav.Item>
-                <Nav.Item>
-                  <Link className="navbar-brand" to="/contacto">
-                    Contacto
-                  </Link>
-                </Nav.Item> */}
               </Nav>
             </Col>
-            <Col sm={4} xs={6}>
-              <div className="pos-f-t">
-                <div className="collapse" id="navbarToggleExternalContent">
-                  <div className="bg-dark p-4">
-                    <h4 className="text-white">Collapsed content</h4>
-                    <span className="text-muted">
-                      Toggleable via the navbar brand.
-                    </span>
-                  </div>
-                </div>
-                <nav className="navbar navbar-dark nh" style={centarNavBar}>
-                  <button
-                    className="navbar-toggler"
-                    type="button"
-                    data-toggle="collapse"
-                    data-target="#navbarToggleExternalContent"
-                    aria-controls="navbarToggleExternalContent"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation"
-                  >
-                    <img
-                      style={{ width: "25%" }}
-                      src="https://agencialosnavegantes.s3.amazonaws.com/menu_hamburguesa_880ab0ce56.png"
-                    ></img>
-                  </button>
-                </nav>
-              </div>
+            <Col sm={4} xs={4}>
+              <Modal></Modal>
+             
             </Col>
           </Row>
         </Container>

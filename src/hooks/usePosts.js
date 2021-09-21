@@ -1,16 +1,20 @@
-// import { graphql, useStaticQuery } from "gatsby";
+import { graphql, useStaticQuery } from "gatsby";
 
-// export default function usePosts() {
-//   const resultado = useStaticQuery(graphql`
-//     query MyQuery {
-//       allStrapiHome {
-//         nodes {
-//           Nombre
-//           subtitulo
-//           Section
-//         }
-//       }
-//     }
-//   `);
-//   return resultado;
-// }
+export default function usePosts() {
+  const resultado = useStaticQuery(graphql`
+    query MyQueryPost {
+      allStrapiPost {
+        nodes {
+          titulo_post
+          seo_title
+          seo_descripcion
+          url
+          miniatura {
+            url
+          }
+        }
+      }
+    }
+  `);
+  return resultado;
+}

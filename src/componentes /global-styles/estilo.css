@@ -1,16 +1,18 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
 body {
-  font-family: Brandon Grotesque;
+  /* font-family: "Brandon", Brandon; */
   overflow-x: hidden !important;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Helvetica Neue, Arial, Noto Sans, sans-serif;
 }
-#___gatsby{
+#___gatsby {
   overflow-x: hidden !important;
 }
 h1,
 h2,
 h3,
 h4 {
-  font-family: "Brandon", Brandon sans-serif;
+  font-family: "Brandon", Brandon;
 }
 .titulo {
   font-family: "Brandon", Brandon;
@@ -64,24 +66,95 @@ a {
 .titulo_h2 {
   font-size: 60px !important;
 }
-.swiper-button-next:after, .swiper-button-prev:after{
+.swiper-button-next:after,
+.swiper-button-prev:after {
   font-size: 20px !important;
 }
-.alinearContenido{
+.alinearContenido {
   justify-content: center;
   align-items: center;
 }
-.titulo2{
+.titulo2 {
   font-size: 60px;
 }
+
+/* Modal estilo */
+.modal-dialog {
+  max-width: 100% !important;
+}
+.modal-content {
+  background-color: inherit !important;
+}
+.modal-backdrop.show {
+  opacity: 1 !important;
+}
+.modal-backdrop {
+  background-color: rgba(0, 0, 0, 0.8) !important;
+}
+.modal-body {
+  text-align: center !important;
+}
+.navbar-brand {
+  margin: 0px !important;
+}
+/* estilo seciones mkt */
+.inicioo {
+  align-items: center;
+  justify-content: center;
+  height: 500px;
+  background: #0100ff;
+}
+.letrasBanner {
+  text-align: left;
+  color: #ffffff;
+  font-size: 75px;
+  font-weight: 700;
+}
+
+.descripcionBanner {
+  color: #ffffff;
+  width: 70%;
+  text-align: justify;
+}
+.tituloseccion2Mkt {
+  color: #fffe00;
+  font-size: 60px;
+  line-height: 1.1em;
+}
+.form-control {
+  border-radius: 0px !important;
+}
+.efecto-hover1:hover {
+  color: blue;
+}
+.efecto-hover1{
+  color:#ff5a83;
+}
+.pos-f-t{
+  display: flex;
+  justify-content: end;
+}
+.item-menu{
+  color:#fff;
+}
+.item-menu:hover{
+  color: #CDCD41;
+}
+.item-menu:active {
+	color: #CDCD41;
+}
+/* Responsive */
 @media (max-width: 600px) {
   .titulo {
     font-size: 20px !important;
   }
-  #columnas{
+  #columnas {
     padding: 10px;
   }
-  h2{
+  h2 {
     font-size: 25px !important;
+  }
+  .imagen-menu {
+    width: 50% !important;
   }
 }

@@ -13,10 +13,10 @@ function sectionAgencia() {
     <div style={{ paddingBottom: "40px", paddingTop: "40px" }}>
       <div style={{ textAlign: "center" }}>
         <img className="img-fluid" src={ImagenSection}></img>
-        <Container>
+        <Container className="contenedor-body">
           <Row >
             {ImgenesAds.map((item, i) => (
-              <Col sm={2}>
+              <Col sm={2} key={i}>
                 <img
                   key={i}
                   className="img-fluid"
@@ -31,11 +31,11 @@ function sectionAgencia() {
         </Container>
 
         <h1 style={{fontWeight:"700", fontSize:"50px"}}>{titulo}</h1>
-        <Container>
+        <Container className="contenedor-body">
           <Row style={{display:"flex", justifyContent:"center"}}>
           <Col sm={1}></Col>
             {ImagenPartners.map((item, i) => (
-              <Col sm={2}>
+              <Col sm={2} key={i}>
                 <img
                   key={i}
                   className="img-fluid"

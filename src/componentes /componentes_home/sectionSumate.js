@@ -1,47 +1,46 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import UsePosts from "../../hooks/usePosts";
 import { Link } from "gatsby";
-
+import { Col, Row, Container } from "react-bootstrap";
+import UseHome from "../../hooks/useHome";
 const sectionSumate = () => {
-  const response = UsePosts();
-  const sectionNombre1 = response.allStrapiHome.nodes[0].Section[8].Titulo1;
-  const sectionNombre2 = response.allStrapiHome.nodes[0].Section[8].Titulo2;
-  const sectionDescripcion1 =
-    response.allStrapiHome.nodes[0].Section[8].descripcion1;
-  //   const sectionDescripcion2 =
-  //     response.allStrapiHome.nodes[0].Section[8].Descripcion2;
-  //   const sectionDescripcion3 =
-  //     response.allStrapiHome.nodes[0].Section[8].Descripcion3;
-
-  const Imagen = response.allStrapiHome.nodes[0].Section[8].Imagen.url;
+  const response = UseHome();
+  const data = response.allStrapiHome.nodes[0].home_seccion10[0];
   return (
-    <div>
-      <div style={{ background: "#290877" }}>
-        <Container>
-          <Row>
-            <Col sm={6}>
-              <img src={Imagen}></img>
-            </Col>
-            <Col sm={6}>
-              <h2>{sectionNombre1}</h2>
-              <br></br>
-              <h2>{sectionNombre2}</h2>
-              <br></br>
-              <p>{sectionDescripcion1}</p>
-              <br></br>
-              
-
-              <Link className="navbar-brand" to="/tripulacion">
-                Comunicate con Nosotros
-              </Link>
-            </Col>
-          </Row>
-        </Container>
-      </div>
-      <div>
-        <img src="https://agencialosnavegantes.s3.amazonaws.com/olas_Sumate_df0e645611.png"></img>
-      </div>
+    <div style={{ backgroundColor: "#2B1E77", padding: "50px 0" }}>
+      <Container className="contenedor-body">
+        <Row
+          className="justify-content-center"
+          style={{ justifyContent: "center", alignItems: "center" }}
+        >
+          <Col sm={6}>
+            <img src={data.sirena[0].url} className="img-fluid"></img>
+          </Col>
+          <Col sm={6}>
+            <h1
+              style={{
+                color: "#ff5983",
+                fontSize: "60px",
+                lineHeight: "1.1em",
+              }}
+            >
+              {data.titulo}
+            </h1>
+            <br></br>
+            <h1
+              style={{
+                color: "#fffe00",
+                fontSize: "41px",
+                lineHeight: "1.1em",
+              }}
+            >
+              {data.titulo2}
+            </h1>
+            <br></br>
+            <p style={{color:"#fff",}}>{data.descripcion}</p>
+            <Link to="/contacto">Comunicate con Nosotros</Link>
+          </Col>
+        </Row>
+      </Container>
     </div>
   );
 };

@@ -1,28 +1,36 @@
-// import React from "react";
-// import UseMkt from "../../hooks/useMkt";
-// import { Container, Row, Col } from "react-bootstrap";
-// const section_banner = () => {
-//   const response = UseMkt();
-//   const Titulo = response.allStrapiMkt.nodes[0].titulo1;
-//   const Subtitulo = response.allStrapiMkt.nodes[0].subitulo;
-//   const ImagenBanners = response.allStrapiMkt.nodes[0].imagenes[0].url;
+import React from "react";
+import { Col, Row, Container } from "react-bootstrap";
+import UseMkt from "../../hooks/useMkt";
+import "../../componentes /global-styles/layout"
+function sectionBannerMkt() {
+  const response = UseMkt();
+  const data = response.allStrapiMkt.nodes[0].mkt_seccion1[0];
+  const titulo = data.titulo;
+  const descripcion = data.descripcion;
+  const gift = data.git_capitan[0].url;
+ 
+  return (
+    <div className="inicioo">
+      <Container className="contenedor-body">
+        <Row>
+          <Col
+            style={{
+              paddingLeft: "50px",
+              paddingRight: "50px",
+              paddingTop: "60px",
+              textAlign: "center",
+            }}
+          >
+            <h1 className="letrasBanner">{titulo}</h1>
+            <h4 className="descripcionBanner">{descripcion}</h4>
+          </Col>
+          <Col>
+            <img src={gift}></img>
+          </Col>
+        </Row>
+      </Container>
+    </div>
+  );
+}
 
-//   return (
-//     <div style={{ backgroundColor: "#2046F5" }}>
-//       <Container style={{maxWidth:"1140px",padding:"40px 0px"}}>
-//         <Row style={{alignItems: "center"}}>
-//           <Col sm={6}>
-//             <h2 style={{ fontSize: "75px", color: "#fff", }}>{Titulo} </h2>
-//             <br></br>
-//             <p style={{ fontSize: "25px", color: "#fff", }}>{Subtitulo}</p>
-//           </Col>
-//           <Col sm={6}>
-//             <img src={ImagenBanners}></img>
-//           </Col>
-//         </Row>
-//       </Container>
-//     </div>
-//   );
-// };
-
-// export default section_banner;
+export default sectionBannerMkt;

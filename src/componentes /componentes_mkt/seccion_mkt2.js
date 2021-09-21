@@ -1,16 +1,18 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import UseHome from "../../hooks/useHome";
+import UseMkt from "../../hooks/useMkt";
 
-const sectionMarketing = () => {
-  const response = UseHome();
-  const data = response.allStrapiHome.nodes[0].home_seccion3[0];
+const seccionMkt2 = () => {
+  const response = UseMkt();
+  const data = response.allStrapiMkt.nodes[0].mkt_seccion2[0];
   const descripcion = data.descripcion;
+  const descripcion2 = data.descripcion2;
   const imagen_iconos = data.imagen_iconos;
-  const Titulo = data.titulo;
+  const titulo = data.titulo;
+  const link = data.link_conversemos;
 
   return (
-    <div style={{ backgroundColor: "#2B1E77", padding: "50px 0" }}>
+    <div style={{ backgroundColor: "#ff5983", padding: "50px 0" }}>
       <Container className="contenedor-body">
         <Row
           className="justify-content-center"
@@ -31,33 +33,22 @@ const sectionMarketing = () => {
             </Row>
           </Col>
           <Col sm={6} className="order-xs-1 order-md-2">
-            <h2
-              style={{
-                lineHeight: "1.1em",
-                fontWeight: "700",
-                color: "#ED5682",
-                fontSize: "60px",
-              }}
-            >
-              {Titulo}
-            </h2>
+            <h1 className="tituloseccion2Mkt">{titulo}</h1>
             <p
               style={{
-                color: "#fff",
+                paddingTop: "20px",
+                paddingBottom: "20px",
+                color: "#000",
+                fontSize: "20px",
                 textAlign: "justify",
-                fontSize: "17px",
               }}
             >
               {descripcion}
             </p>
             <p
-              style={{
-                color: "#fff",
-                textAlign: "justify",
-                fontSize: "20px",
-              }}
+              style={{ color: "#000", fontSize: "20px", textAlign: "justify" }}
             >
-              {/* {contenido} */}
+              {descripcion2}
             </p>
             <a
               href=""
@@ -66,10 +57,26 @@ const sectionMarketing = () => {
                 fontSize: "25px",
                 fontWeight: "700",
                 textDecoration: "none",
+                textAlign: "right",
               }}
             >
-              Descubre más aquí <i className="bi bi-arrow-right"  style={{ marginTop: "5px", paddingLeft: "10px" }}></i>
-              
+              <p>
+                Conversemos
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  className="bi bi-arrow-right"
+                  viewBox="0 0 16 16"
+                  style={{ marginTop: "5px", paddingLeft: "10px" }}
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"
+                  />
+                </svg>
+              </p>
             </a>
           </Col>
         </Row>
@@ -78,4 +85,4 @@ const sectionMarketing = () => {
   );
 };
 
-export default sectionMarketing;
+export default seccionMkt2;

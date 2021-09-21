@@ -7,7 +7,7 @@ const footer = () => {
   };
   const linea = {
     backgroundColor: "#0100fe",
-    height: "10px",
+    height: "5px",
     width: "75%",
   };
   const texto = {
@@ -17,7 +17,7 @@ const footer = () => {
     fontWeight: "300",
   };
   const estiloImagen = {
-    width: "65%",
+    width: "60%",
   };
   const redesSociales = {
     width: "40px",
@@ -29,7 +29,9 @@ const footer = () => {
     paddingTop: "20px",
   };
   return (
-    <Container className="contenedor-footer">
+    <div>
+      <hr style={{backgroundColor: "#f1ecec",}}></hr>
+      <Container className="contenedor-footer">
       <Row className="justify-content-center mt-3" >
         <Col sm={3} className="text-center">
           <img
@@ -173,6 +175,7 @@ const footer = () => {
         </Col>
       </Row>
     </Container>
+    </div>
   );
 };
 

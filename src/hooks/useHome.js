@@ -10,6 +10,11 @@ export default function useHome() {
           home_seccion4
           home_seccion5
           home_seccion6
+          home_seccion7
+          home_seccion8
+          home_seccion9
+          home_seccion10
+          home_seccion11
         }
       }
     }

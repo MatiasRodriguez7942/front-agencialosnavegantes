@@ -1,41 +1,31 @@
-import React from 'react'
+import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import UsePosts from "../../hooks/usePosts";
-
+import UseHome from "../../hooks/useHome";
 const sectionDesarrollo = (props) => {
-    const response = UsePosts();
-    const sectionNombre =
-      response.allStrapiHome.nodes[0].Section[4].Titulo_seccion;
-    const contenido = response.allStrapiHome.nodes[0].Section[4].Texto;
-    const subtitulo = response.allStrapiHome.nodes[0].Section[4].subtitulo;
-    const imagenes = response.allStrapiHome.nodes[0].Section[4].imagenes;
-    return (
-        <div style={{ backgroundColor: props.color_fondo, padding: "50px 0" }}>
+  const response = UseHome();
+  const data = response.allStrapiHome.nodes[0].home_seccion5[0];
+  const descripcion = data.descripcion;
+  const titulo = data.titulo;
+  const imaganes_iconos = data.imagen_iconos;
+  return (
+    <div style={{ backgroundColor: "#FA5983", padding: "50px 0" }}>
       <Container className="contenedor-body">
         <Row
           className="justify-content-center"
           style={{ justifyContent: "center", alignItems: "center" }}
         >
-             <Col sm={6}>
+          <Col sm={6}>
             <h2
-              className="titulo_h2"
+  
               style={{
                 lineHeight: "1.1em",
                 fontWeight: "700",
                 color: "#280077",
+                fontSize:"60px"
               }}
             >
-              {sectionNombre}
+              {titulo}
             </h2>
-            <p
-              style={{
-                color: "#54595f",
-                textAlign: "justify",
-                fontSize: "20px",
-              }}
-            >
-              {subtitulo}
-            </p>
             <p
               style={{
                 color: "#fff",
@@ -43,18 +33,21 @@ const sectionDesarrollo = (props) => {
                 fontSize: "20px",
               }}
             >
-              {contenido}
+              {descripcion}
             </p>
+
             <a
               href=""
               style={{ color: "#280077", fontSize: "25px", fontWeight: "700" }}
             >
               Descubre más aquí
+              <i className="bi bi-arrow-right"  style={{ marginTop: "5px", paddingLeft: "10px" }}></i>
+             
             </a>
           </Col>
           <Col sm={6}>
             <Row style={{ justifyContent: "center", alignItems: "center" }}>
-              {imagenes.map((item, i) => (
+              {imaganes_iconos.map((item, i) => (
                 <Col xs={6} md={6} sm={6} key={i}>
                   <img
                     key={i}
@@ -68,8 +61,8 @@ const sectionDesarrollo = (props) => {
           </Col>
         </Row>
       </Container>
-      </div>
-    )
-}
+    </div>
+  );
+};
 
-export default sectionDesarrollo
+export default sectionDesarrollo;
