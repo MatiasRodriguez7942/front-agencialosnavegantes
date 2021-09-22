@@ -5,12 +5,12 @@ import UseHome from "../../hooks/useHome";
 function sectionSobreNosotros() {
   const response = UseHome();
   const data = response.allStrapiHome.nodes[0].home_seccion9[0];
-
+console.log(data)
     return (
-        <div style={{background:"#ED5582" ,padding: "40px 0px" }}>
+        <div style={{background:"#FA5883" ,padding: "40px 0px" }}>
             <Container className="contenedor-body">
                 <Row style={{ justifyContent: "center", alignItems: "center" }}>
-                    <Col sm={6}><h1 style={{color:"#fff",}}>{data.titulo}</h1><br></br><h2 style={{color:"#fffe00",}}>{data.titulo2}</h2><p>{data.descripcion}</p><p>{data.descripcion1}</p><p>{data.descripcion2}</p><p>{data.descripcion3}</p></Col>
+                    <Col sm={6}><h1 style={{color:"#fff",fontSize:"60px"}}>{data.titulo}</h1><h2 style={{color:"#fffe00",fontSize:"45px"}}>{data.titulo2}</h2><p  style={{fontSize:"17px",textAlign:"justify",color:"#fff"}}>{data.descripcion1}</p><p  style={{fontSize:"17px",textAlign:"justify",color:"#fff"}}>{data.descripcion2}</p><p  style={{fontSize:"17px",textAlign:"justify",color:"#fff"}}>{data.descripcion3}</p><Link to="tripulacion">{data.link}</Link></Col>
                     <Col sm={6} style={{textAlign:"center"}}><img src={data.imagen[0].url} className="img-fluid"></img></Col>
                 </Row>
             </Container>

@@ -18,10 +18,14 @@ const slider = () => {
 
   return (
     <div style={{ padding: "50px", background: "#F9F9FA" }}>
-      <img src="https://agencia-navegantes.s3.amazonaws.com/foto400_67c2893bc8.PNG?106058.69999998808"></img>
+      <img
+        style={{ textAlign: "center" ,width:"100%"}}
+        clasName="img-fluid"
+        src="https://agencia-navegantes.s3.amazonaws.com/foto400_67c2893bc8.PNG?106058.69999998808"
+      ></img>
       <Container>
         <Row style={{ alignItems: "center", justifyContent: "center" }}>
-          <Col sm={4}>
+          <Col sm={4} style={{ textAlign: "center" }}>
             <img
               className="img-fluid"
               src="https://agencia-navegantes.s3.amazonaws.com/small_descripcion_nosotros_ae0038fb12.PNG?139659.19999998808"

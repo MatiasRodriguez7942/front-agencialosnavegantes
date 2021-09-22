@@ -6,7 +6,7 @@ const sectionSumate = () => {
   const response = UseHome();
   const data = response.allStrapiHome.nodes[0].home_seccion10[0];
   return (
-    <div style={{ backgroundColor: "#2B1E77", padding: "50px 0" }}>
+    <div style={{ backgroundColor: "#290877", padding: "50px 0" }}>
       <Container className="contenedor-body">
         <Row
           className="justify-content-center"

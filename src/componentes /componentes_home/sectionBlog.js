@@ -5,7 +5,7 @@ import UsePosts from "../../hooks/usePosts";
 function sectionBlog() {
   const response = UsePosts();
   const data = response.allStrapiPost.nodes;
-  console.log(data);
+
   return (
     <div>
       <div style={{ textAlign: "center" }}>

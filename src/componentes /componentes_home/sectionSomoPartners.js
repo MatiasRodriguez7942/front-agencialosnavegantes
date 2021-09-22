@@ -6,7 +6,7 @@ function sectionSomoPartners() {
   const response = UseHome();
   const data = response.allStrapiHome.nodes[0].home_seccion8[0]
   return (
-    <div style={{ background: "#2046F5", padding: "40px 0px 0px" }}>
+    <div style={{ background: "#031FFF", paddingBottom: "40px" }}>
       <Container className="contenedor-body">
         <Row style={{ justifyContent: "center", alignItems: "center" }}>
           <Col sm={6}>

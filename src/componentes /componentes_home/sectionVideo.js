@@ -1,36 +1,61 @@
 import React from "react";
 import UseHome from "../../hooks/useHome";
 import { Link } from "gatsby";
-function sectionVideo() {
+import "../../../node_modules/react-modal-video/scss/modal-video.scss";
+import ModalVideo from "react-modal-video";
+import { Col, Row, Container } from "react-bootstrap";
+function SectionVideo() {
   const response = UseHome();
   const Datos = response.allStrapiHome.nodes[0].home_seccion7;
+  const [isOpen, setOpen] = React.useState(false);
+
   return (
     <div
       style={{
         alignItems: "center",
         justifyContent: "center",
         textAlign: "center",
-        padding: "40px 0px",
+        paddingBottom:"40px",
+        paddingTop:"40px" ,
       }}
     >
-      <video
-        controls
-        preload="auto"
-        poster="https://agencia-navegantes.s3.amazonaws.com/imgvideo2_860cc0dc1b.jpg?2047885"
-        data-setup='{ "fluid": true }'
-        style={{ width: "750px" }}
+      <ModalVideo
+        channel="youtube"
+        autoplay
+        isOpen={isOpen}
+        videoId="gB3F83WhmzY"
+        onClose={() => setOpen(false)}
+      />
+      <div
+        style={{
+          backgroundImage: `url("https://agencia-navegantes.s3.amazonaws.com/imgvideo2_1_f7cace4ae8.jpg")`,
+          backgroundRepeat: "no-repeat",
+          height: "500px",
+          backgroundPosition: "center",
+        }}
       >
-        <source
-          src="https://agencia-navegantes.s3.amazonaws.com/Agencia_Los_Navegantes_2021_1_45a466e8e5.mp4"
-          style={{ width: "750px" }}
-        ></source>
-      </video>
-      <div style={{ textAlign: "center", paddingTop: "25px" }}>
-        <h2>¿Quieres saber más sobre nuestra Agencia?</h2>
-        <Link to="https://www.youtube.com/channel/UCjpbMe-8c2GWVB8JcZ1D-cQ">Visita nuestro Canal </Link>
+        <div>
+          <button
+            className="btn-primary"
+            style={{
+              color: "#FDF851",
+              fontSize: "100px",
+              marginTop: "9%",
+              background: "transparent",
+              border: "none",
+            }}
+            onClick={() => setOpen(true)}
+          >
+            <i className="bi bi-play-circle"></i>
+          </button>
+        </div>
+        <div style={{marginTop:"10%"}}>
+          <h2>{Datos[0].titulo}</h2>
+           <p>{Datos[0].visita_link}</p>
+        </div>
       </div>
     </div>
   );
 }
 
-export default sectionVideo;
+export default SectionVideo;
