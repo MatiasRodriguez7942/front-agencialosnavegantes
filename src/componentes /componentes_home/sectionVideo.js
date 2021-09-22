@@ -1,9 +1,7 @@
 import React from "react";
 import UseHome from "../../hooks/useHome";
-import { Link } from "gatsby";
 import "../../../node_modules/react-modal-video/scss/modal-video.scss";
 import ModalVideo from "react-modal-video";
-import { Col, Row, Container } from "react-bootstrap";
 function SectionVideo() {
   const response = UseHome();
   const Datos = response.allStrapiHome.nodes[0].home_seccion7;
