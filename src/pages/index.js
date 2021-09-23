@@ -28,7 +28,7 @@ const IndexPage = () => {
       <SectionAnaliticaPerformance></SectionAnaliticaPerformance>
       <SectionDesarrollo></SectionDesarrollo>
       <SectionSlider></SectionSlider>
-      <SectionVideo></SectionVideo>
+      {/* <SectionVideo></SectionVideo> */}
       <SeparadorOlasAbajo></SeparadorOlasAbajo>
       <SectionSomoPartners></SectionSomoPartners>
       <SectionSobreNosotros></SectionSobreNosotros>
