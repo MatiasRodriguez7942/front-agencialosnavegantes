@@ -1,7 +1,7 @@
 import React from "react";
 import UseHome from "../../hooks/useHome";
 // import "../../../node_modules/react-modal-video/scss/modal-video.scss";
-import "../../componentes /global-styles/layout";
+// import "../../componentes /global-styles/layout";
 // import ModalVideo from "react-modal-video"
 function SectionVideo() {
   const response = UseHome();
@@ -18,7 +18,7 @@ function SectionVideo() {
         paddingTop:"40px" ,
       }}
     >
-      {/* <ModalVideo
+      <ModalVideo
         channel="youtube"
         autoplay
         isOpen={isOpen}
@@ -52,7 +52,7 @@ function SectionVideo() {
           <h2>{Datos[0].titulo}</h2>
            <p>{Datos[0].visita_link}</p>
         </div>
-      </div> */}
+      </div>
     </div>
   );
 }
