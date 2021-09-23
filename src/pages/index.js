@@ -11,6 +11,7 @@ import SectionDesarrollo from "../componentes /componentes_home/sectionDesarroll
 import SectionSlider from "../componentes /componentes_home/slider";
 import "../componentes /global-styles/layout";
 import SectionBlog from "../componentes /componentes_home/sectionBlog";
+import SectionVideo from "../componentes /componentes_home/SectionVideo";
 import SeparadorOlasAbajo from "../componentes /separadorOlasAbajo";
 import SectionSomoPartners from "../componentes /componentes_home/sectionSomoPartners";
 import SectionSobreNosotros from "../componentes /componentes_home/sectionSobreNosotros";
@@ -28,6 +29,7 @@ const IndexPage = () => {
       <SectionAnaliticaPerformance></SectionAnaliticaPerformance>
       <SectionDesarrollo></SectionDesarrollo>
       <SectionSlider></SectionSlider>
+      <SectionVideo></SectionVideo>
       <SeparadorOlasAbajo></SeparadorOlasAbajo>
       <SectionSomoPartners></SectionSomoPartners>
       <SectionSobreNosotros></SectionSobreNosotros>
