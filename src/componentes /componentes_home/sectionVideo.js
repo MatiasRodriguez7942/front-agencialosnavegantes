@@ -1,7 +1,7 @@
 import React from "react";
 import UseHome from "../../hooks/useHome";
-import "../../../node_modules/react-modal-video/scss/modal-video.scss";
-// import ModalVideo from "react-modal-video";
+// import "../../../node_modules/react-modal-video/scss/modal-video.scss";
+import "../../componentes /global-styles/layout";
 import ModalVideo from "react-modal-video"
 function SectionVideo() {
   const response = UseHome();
