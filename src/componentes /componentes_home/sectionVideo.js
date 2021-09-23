@@ -1,7 +1,8 @@
 import React from "react";
 import UseHome from "../../hooks/useHome";
-
-// import ModalVideo from "react-modal-video"
+// import "../../../node_modules/react-modal-video/scss/modal-video.scss";
+import "../../componentes /global-styles/layout";
+import ModalVideo from "react-modal-video"
 function SectionVideo() {
   const response = UseHome();
   const Datos = response.allStrapiHome.nodes[0].home_seccion7;
@@ -17,13 +18,13 @@ function SectionVideo() {
         paddingTop:"40px" ,
       }}
     >
-      {/* <ModalVideo
+      <ModalVideo
         channel="youtube"
         autoplay
         isOpen={isOpen}
         videoId="gB3F83WhmzY"
         onClose={() => setOpen(false)}
-      /> */}
+      />
       <div
         style={{
           backgroundImage: `url("https://agencia-navegantes.s3.amazonaws.com/imgvideo2_1_f7cace4ae8.jpg")`,
