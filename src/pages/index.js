@@ -18,6 +18,7 @@ import SectionSobreNosotros from "../componentes /componentes_home/sectionSobreN
 import SectionSumate from "../componentes /componentes_home/sectionSumate";
 import SeparadorOlasSirena from "../componentes /separadorOlasSirena";
 import SectionSaberMas from "../componentes /componentes_home/sectionSaberMas";
+import SectionInstagram from "../componentes /SectionInstagram";
 const IndexPage = () => {
   return (
     <React.Fragment>
