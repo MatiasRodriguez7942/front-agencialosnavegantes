@@ -79,9 +79,9 @@ a {
 }
 
 /* Modal estilo */
-.modal-dialog {
+/* .modal-dialog {
   max-width: 100% !important;
-}
+} */
 .modal-content {
   background-color: inherit !important;
 }
