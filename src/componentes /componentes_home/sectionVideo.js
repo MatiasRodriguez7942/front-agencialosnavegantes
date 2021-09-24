@@ -32,7 +32,7 @@ function SectionVideo() {
           backgroundPosition: "center",
         }}
       >
-     
+     <button className="btn-primary" onClick={()=> setOpen(true)}>VIEW DEMO</button>
       </div>
     </div>
   );

@@ -5,7 +5,6 @@ import UseHome from "../../hooks/useHome";
 function sectionSobreNosotros() {
   const response = UseHome();
   const data = response.allStrapiHome.nodes[0].home_seccion9[0];
-console.log(data)
     return (
         <div style={{background:"#FA5883" ,padding: "40px 0px" }}>
             <Container className="contenedor-body">

@@ -1,7 +1,7 @@
 import { graphql, useStaticQuery } from "gatsby";
 export default function useAnalitica() {
   const resultado = useStaticQuery(graphql`
-    query MyQueryTripulacion {
+    query MyQueryAnalitica {
       allStrapiAnalitica {
         nodes {
           ANALITICA_SECCION1

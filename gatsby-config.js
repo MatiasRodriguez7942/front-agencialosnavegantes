@@ -9,7 +9,7 @@ module.exports = {
             options: {
               apiURL: `https://los-navegantes.herokuapp.com`,
               queryLimit: 1000, // Defaults to 100
-              collectionTypes: [`post`], 
+              collectionTypes: [`post`,`instagram-contenidos`], 
               singleTypes: [`home`,`mkt`,`tripulacion`,`analitica`],
             },
           },

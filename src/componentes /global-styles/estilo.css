@@ -127,21 +127,21 @@ a {
 .efecto-hover1:hover {
   color: blue;
 }
-.efecto-hover1{
-  color:#ff5a83;
+.efecto-hover1 {
+  color: #ff5a83;
 }
-.pos-f-t{
+.pos-f-t {
   display: flex;
   justify-content: end;
 }
-.item-menu{
-  color:#fff;
+.item-menu {
+  color: #fff;
 }
-.item-menu:hover{
-  color: #CDCD41;
+.item-menu:hover {
+  color: #cdcd41;
 }
 .item-menu:active {
-	color: #CDCD41;
+  color: #cdcd41;
 }
 /* Responsive */
 @media (max-width: 600px) {
@@ -157,4 +157,197 @@ a {
   .imagen-menu {
     width: 50% !important;
   }
+}
+/* estilo tripulacion */
+
+.inicioo {
+  align-items: center;
+  justify-content: center;
+  height: 500px;
+  background: #0100ff;
+}
+.letrasBanner {
+  text-align: left;
+  color: #ffffff;
+  font-size: 70px;
+  font-weight: 700;
+}
+
+.descripcionBanner {
+  color: #ffffff;
+  width: 80%;
+  text-align: justify;
+}
+.tituloseccion2Mkt {
+  color: #fffe00;
+  font-size: 60px;
+  line-height: 1.1em;
+}
+
+.contenedor-body {
+  max-width: 1140px;
+}
+.body {
+  background: #031fff;
+  color: white;
+}
+
+.descripTriSec2 {
+  color: #54595f;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.3em;
+  text-align: left;
+  padding-bottom: 10px;
+}
+
+.uneteTriSec2 {
+  color: #ff5983;
+  font-size: 30px;
+  font-weight: 700;
+  text-align: left;
+}
+
+.seccion5Titulo {
+  padding-left: 100px;
+  color: #280077;
+  font-size: 60px;
+  line-height: 1.1em;
+  text-align: left;
+}
+
+.seccion5descripcion {
+  padding-left: 100px;
+  color: #280077;
+  font-size: 23px;
+  font-weight: 300;
+  line-height: 1.1em;
+  text-align: left;
+}
+
+.contenedor-body5 {
+  background: #fffe00;
+}
+.contenedor-body6 {
+  background: #280077;
+}
+
+.seccion6Titulo {
+  padding-right: 100px;
+  color: #ff5983;
+  font-size: 60px;
+  line-height: 1.1em;
+  text-align: left;
+}
+
+.seccion6descripcion {
+  padding-right: 100px;
+  color: #ff5983;
+  font-size: 23px;
+  font-weight: 300;
+  line-height: 1.1em;
+  text-align: left;
+}
+
+.contenedor-body7 {
+  background: #ff5983;
+}
+
+.seccion7Titulo {
+  padding-left: 100px;
+  color: #fff;
+  font-size: 60px;
+  line-height: 1.1em;
+  text-align: left;
+}
+
+.seccion7descripcion {
+  color: #fff;
+  font-size: 23px;
+  font-weight: 300;
+  line-height: 1.1em;
+  text-align: left;
+  padding-left: 100px;
+}
+
+.contenedor-body8 {
+  padding-left: 100px;
+  padding-right: 100px;
+  background: #0100ff;
+}
+
+.seccion8Titulo {
+  padding-right: 100px;
+  color: #fffe00;
+  font-size: 60px;
+  line-height: 1.1em;
+  text-align: left;
+}
+
+.seccion8descripcion {
+  padding-right: 100px;
+  color: #fffe00;
+  font-size: 23px;
+  font-weight: 300;
+  line-height: 1.1em;
+  text-align: left;
+}
+
+.div-imagen {
+  position: relative;
+}
+
+.desvanecer {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+
+.contain {
+  border-radius: 20px;
+  box-shadow: none;
+  background: rgba(1, 0, 255, 0.64);
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.div-imagen:hover .desvanecer {
+  opacity: 1;
+}
+
+.div-imagen:hover .contain {
+  opacity: 3;
+}
+
+.nombreEquipo {
+  font-size: 25px;
+
+  font-weight: 700;
+  color: white;
+}
+
+.descripcionEquipo {
+  color: white;
+  font-size: 20px;
+  font-weight: 200;
+}
+
+#iconos {
+  color: white;
+}
+
+#iconos:hover {
+  color: yellow;
+}
+.swiper-slide{
+  text-align: center;
 }
