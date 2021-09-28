@@ -79,12 +79,26 @@ a {
 }
 
 /* Modal estilo */
-/* .modal-dialog {
-  max-width: 100% !important;
-} */
 .modal-content {
   background-color: inherit !important;
+  border: none !important;
 }
+.navbar-brand {
+  margin: 0px !important;
+}
+.modal-body {
+  text-align: center !important;
+}
+.modal-dialog {
+  max-width: 100% !important;
+}
+.modal-header{
+  border: none !important;
+}
+/* .modal-dialog {
+  max-width: 100% !important;
+}
+
 .modal-backdrop.show {
   opacity: 1 !important;
 }
@@ -96,7 +110,7 @@ a {
 }
 .navbar-brand {
   margin: 0px !important;
-}
+} */
 /* estilo seciones mkt */
 .inicioo {
   align-items: center;

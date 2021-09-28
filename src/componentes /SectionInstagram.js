@@ -14,7 +14,6 @@ SwiperCore.use([Navigation]);
 function SectionInstagram() {
   const response = UseInstagram();
   const data = response.allStrapiInstagramContenidos.nodes;
-  console.log(data);
   return (
     <div>
       <div style={{ textAlign: "center", paddingTop: "25px" }}>
