@@ -1,7 +1,6 @@
 import React from "react";
-import { Link } from "gatsby";
 import "../../componentes /global-styles/layout";
-import { Nav, Container, Row, Col } from "react-bootstrap";
+import {  Container, Row, Col } from "react-bootstrap";
 
 function SectionRedesSociales() {
     const iconos = {
@@ -26,6 +25,7 @@ function SectionRedesSociales() {
             <img
               className="img-fluid"
               src="https://agencia-navegantes.s3.amazonaws.com/giphy_14_a3122a0f0e.gif"
+              alt=""
             ></img>
           </Col>
           <Col sm={6}>
@@ -34,13 +34,13 @@ function SectionRedesSociales() {
             </h1>
             <Row>
               <Col sm="4">
-                <i  style={iconos}class="bi bi-facebook"></i>
+                <i  style={iconos}className="bi bi-facebook"></i>
               </Col>
               <Col sm="4">
-                <i style={iconos}class="bi bi-linkedin"></i>
+                <i style={iconos}className="bi bi-linkedin"></i>
               </Col>
               <Col sm="4">
-                <i style={iconos}class="bi bi-instagram"></i>
+                <i style={iconos}className="bi bi-instagram"></i>
               </Col>
             </Row>
           </Col>

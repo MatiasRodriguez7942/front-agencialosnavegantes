@@ -34,6 +34,7 @@ function SeccionTri6() {
             <img
               style={{ paddingTop: "40px", width: "40%" }}
               src={imagen}
+              alt=""
             ></img>
           </Col>
         </Row>

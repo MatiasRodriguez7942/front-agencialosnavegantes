@@ -1,13 +1,11 @@
 import React from "react";
 import UseInstagram from "../hooks/useInstagram";
-import { Col, Container, Row } from "react-bootstrap";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "../componentes /global-styles/layout";
 import SwiperCore, { Navigation } from "swiper";
-import { Link } from "gatsby";
 
 // install Swiper modules
 SwiperCore.use([Navigation]);
@@ -30,16 +28,16 @@ function SectionInstagram() {
         {data.map((item, i) => (
           <SwiperSlide key={i}>
             <a href={item.link1} key={i}>
-              <img key={i} className="img-fluid" src={item.imagen.url}></img>
+              <img  alt="" key={i} className="img-fluid" src={item.imagen.url}></img>
             </a>
           </SwiperSlide>
         ))}
       </Swiper>
 
       <div style={{ textAlign: "center", paddingTop: "25px" }}>
-        <Link to="https://www.instagram.com/agencialosnavegantes/">
+        <a href="https://www.instagram.com/agencialosnavegantes/">
           Visita nuestro Instagram
-        </Link>
+        </a>
       </div>
     </div>
   );

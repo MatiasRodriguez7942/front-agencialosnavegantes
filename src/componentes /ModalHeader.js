@@ -1,5 +1,5 @@
 import React from "react";
-import { Modal, Nav, Container, Row, Col } from "react-bootstrap";
+import { Modal, Nav } from "react-bootstrap";
 import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import { Link } from "gatsby";
 function ModalHeader() {
@@ -29,6 +29,7 @@ function ModalHeader() {
               style={{ width: "25%" }}
               src="https://agencialosnavegantes.s3.amazonaws.com/menu_hamburguesa_880ab0ce56.png"
               className="imagen-menu"
+              alt=""
             ></img>
           </button>
         </nav>
@@ -60,13 +61,13 @@ function ModalHeader() {
             </Link>
           </Nav.Item>
           <Nav.Item>
-            <Link
+            <a
               className="navbar-brand item-menu"
-              to="https://ecommerce.agencialosnavegantes.cl/"
+              href="https://ecommerce.agencialosnavegantes.cl/"
               style={{ fontSize: "32px" }}
             >
               Desarrollo web
-            </Link>
+            </a>
           </Nav.Item>
           <Nav.Item>
             <Link

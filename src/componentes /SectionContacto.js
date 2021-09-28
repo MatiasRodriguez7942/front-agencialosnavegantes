@@ -30,7 +30,11 @@ function SectionContacto() {
               </h3>
             </Col>
             <Col sm={6}>
-              <Form>
+              <Form name="contacto"
+               method="post"
+               data-netlify="true"
+               data-netlify-honeypot="bot-field"
+              >
                 <Form.Group className="mb-3">
                   <Form.Control type="text" placeholder="Nombre" />
                 </Form.Group>

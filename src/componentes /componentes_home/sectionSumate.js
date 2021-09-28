@@ -13,7 +13,7 @@ const sectionSumate = () => {
           style={{ justifyContent: "center", alignItems: "center" }}
         >
           <Col sm={6}>
-            <img src={data.sirena[0].url} className="img-fluid"></img>
+            <img src={data.sirena[0].url} className="img-fluid" alt=""></img>
           </Col>
           <Col sm={6}>
             <h1
@@ -36,8 +36,23 @@ const sectionSumate = () => {
               {data.titulo2}
             </h1>
             <br></br>
-            <p style={{color:"#fff",}}>{data.descripcion}</p>
-            <Link to="/contacto">Comunicate con Nosotros</Link>
+            <p style={{ color: "#fff",textAlign:"justify" }}>{data.descripcion}</p>
+
+            <Link
+              style={{
+                color: "#fffe00",
+                fontSize: "25px",
+                fontWeight: "500",
+                textDecoration: "none",
+              }}
+              to="/contacto"
+            >
+              Comunicate con Nosotros
+              <i
+                className="bi bi-arrow-right"
+                style={{ marginTop: "5px", paddingLeft: "10px" }}
+              ></i>
+            </Link>
           </Col>
         </Row>
       </Container>

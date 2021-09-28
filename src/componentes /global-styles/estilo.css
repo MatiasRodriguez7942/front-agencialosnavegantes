@@ -14,6 +14,11 @@ h3,
 h4 {
   font-family: "Brandon", Brandon;
 }
+.navbar-dark .navbar-toggler{
+
+  border: none !important;
+}
+
 .titulo {
   font-family: "Brandon", Brandon;
   font-size: 75px;

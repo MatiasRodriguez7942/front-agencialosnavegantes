@@ -1,16 +1,14 @@
 import React from "react";
-import { Modal, Nav, Container, Row, Col, Button } from "react-bootstrap";
+import { Link } from "gatsby";
+import { Modal, Button } from "react-bootstrap";
 import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
-import UseHome from "../../src/hooks/useHome";
-export const SectionVideo = () => {
+export const SectionVideo = (props) => {
   const [show, setShow] = React.useState(false);
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
-  const response = UseHome();
-  const data = response.allStrapiHome.nodes[0].home_seccion7[0];
   return (
-    <div>
+    <div style={{paddingTop:"50px",paddingBottom:"50px",background:props.colorFondo}}>
       <div
         className="modal-video"
         style={{
@@ -60,6 +58,21 @@ export const SectionVideo = () => {
           </Button>
         </Modal.Body>
       </Modal>
+      <div style={{ textAlign: "center", paddingTop: "25px" }}>
+          <h2>¿Quieres saber más sobre nuestra Agencia?</h2>
+          <Link to="https://www.youtube.com/channel/UCjpbMe-8c2GWVB8JcZ1D-cQ"  style={{
+                color: "#FA5983",
+                fontSize: "25px",
+                fontWeight: "500",
+                textDecoration: "none",
+              }}>
+            Visita nuestro Canal
+            <i
+              className="bi bi-arrow-right"
+              style={{ marginTop: "5px", paddingLeft: "10px" }}
+            ></i>
+          </Link>
+        </div>
     </div>
   );
 };

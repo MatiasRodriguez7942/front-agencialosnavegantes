@@ -6,13 +6,7 @@ import "../global-styles/layout";
 function seccionTri3() {
   const response = UseTri();
   const data = response.allStrapiTripulacion.nodes[0].tripulacion_seccion11;
-  const data2 = response.allStrapiTripulacion.nodes[0].tripulacion_seccion11[0];
-  const ocupacion = data.ocupacion;
-  const imagenTri = data.imagen;
-  const nombre = data.nombre;
-  const descripcion = data.descripcion;
-  const link_insta = data.link_insta;
-  const linkedin = data.linkenid;
+  
 
   return (
     <div>
@@ -32,6 +26,7 @@ function seccionTri3() {
                   className="desvanecer"
                   src={item.imagen.url}
                   width={300}
+                  alt=""
                 ></img>
                 <Container
                   style={{ marginTop: "100px" }}
@@ -44,10 +39,10 @@ function seccionTri3() {
                   <p className="descripcionEquipo">{item.ocupacion}</p>
                   <h1 style={{ letterSpacing: "10px" }}>
                     <Link className="links" to={item.link_insta}>
-                      <i id="iconos" class="bi bi-instagram"></i>
+                      <i id="iconos" className="bi bi-instagram"></i>
                     </Link>
                     <Link to={item.linkenid}>
-                      <i id="iconos" class="bi bi-linkedin"></i>
+                      <i id="iconos" className="bi bi-linkedin"></i>
                     </Link>
                   </h1>
                   <p

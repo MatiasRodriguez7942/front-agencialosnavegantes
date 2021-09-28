@@ -20,12 +20,15 @@ import SectionSaberMas from "../componentes /componentes_home/sectionSaberMas";
 import SectionInstagram from "../componentes /SectionInstagram";
 
 const IndexPage = () => {
+  const colorFondo= "#031fff"
   return (
     <React.Fragment>
-      <Header />
+      <Header colorFondo={colorFondo} />
       <SectionBannerHome></SectionBannerHome>
       <Sectionolas></Sectionolas>
+      <div  id="agencia">
       <SectionAgencia></SectionAgencia>
+      </div>
       <SectionMarketing></SectionMarketing>
       <SectionAnaliticaPerformance></SectionAnaliticaPerformance>
       <SectionDesarrollo></SectionDesarrollo>

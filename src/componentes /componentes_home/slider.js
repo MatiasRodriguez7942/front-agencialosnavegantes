@@ -19,9 +19,10 @@ const slider = () => {
   return (
     <div style={{ padding: "50px", background: "#F9F9FA" }}>
       <img
-        style={{ textAlign: "center" ,width:"100%"}}
+        style={{ textAlign: "center", width: "100%" }}
         className="img-fluid"
         src="https://agencia-navegantes.s3.amazonaws.com/foto400_67c2893bc8.PNG?106058.69999998808"
+        alt=""
       ></img>
       <Container>
         <Row style={{ alignItems: "center", justifyContent: "center" }}>
@@ -29,6 +30,7 @@ const slider = () => {
             <img
               className="img-fluid"
               src="https://agencia-navegantes.s3.amazonaws.com/small_descripcion_nosotros_ae0038fb12.PNG?139659.19999998808"
+              alt=""
             ></img>
           </Col>
           <Col sm={6}>
@@ -46,6 +48,7 @@ const slider = () => {
                       className="img-fluid"
                       style={{ width: "100%" }}
                       src={item.imagen1[0].url}
+                      alt=""
                     ></img>
                   </a>
                 </SwiperSlide>
@@ -55,7 +58,18 @@ const slider = () => {
         </Row>
         <div style={{ textAlign: "center", paddingTop: "25px" }}>
           <h2>¿Quieres conocer nuestros casos de éxito?</h2>
-          <Link to="/contacto">Solicita portafolio aquí</Link>
+          <Link to="/contacto"  style={{
+                color: "#031FFE",
+                fontSize: "25px",
+                fontWeight: "500",
+                textDecoration: "none",
+              }}>
+            Solicita portafolio aquí
+            <i
+              className="bi bi-arrow-right"
+              style={{ marginTop: "5px", paddingLeft: "10px" }}
+            ></i>
+          </Link>
         </div>
       </Container>
     </div>

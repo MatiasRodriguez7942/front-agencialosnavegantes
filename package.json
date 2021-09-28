@@ -33,6 +33,7 @@
     "swiper": "^7.0.5"
   },
   "devDependencies": {
-    "@types/node": "^16.9.6"
+    "@types/node": "^16.9.6",
+    "mini-css-extract-plugin": "^2.3.0"
   }
 }
