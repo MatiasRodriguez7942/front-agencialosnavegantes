@@ -70,7 +70,7 @@ function SectionContacto() {
                   </Form.Control>
                 </Form.Group>
                 <Form.Group className="mb-3">
-                  <Form.Control name="mensaje" placeholder="Mensaje" as="textarea" rows={3} />
+                  <Form.Control name="mensajes" placeholder="Mensaje" as="textarea" rows={3} />
                 </Form.Group>
                 <Button
                   type="submit"
