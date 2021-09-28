@@ -36,22 +36,24 @@ function SectionContacto() {
                data-netlify-honeypot="bot-field"
               >
                 <Form.Group className="mb-3">
-                  <Form.Control type="text" placeholder="Nombre" />
+                  <Form.Control name="nombre" type="text" placeholder="Nombre" />
                 </Form.Group>
                 <Form.Group className="mb-3">
-                  <Form.Control type="text" placeholder="Apellido" />
+                  <Form.Control  name="apellido" type="text" placeholder="Apellido" />
                 </Form.Group>
                 <Form.Group className="mb-3">
-                  <Form.Control type="text" placeholder="Empresa" />
+                  <Form.Control name="empresa" type="text" placeholder="Empresa" />
                 </Form.Group>
                 <Form.Group className="mb-3">
                   <Form.Control
+                  name="telefono"
                     type="number"
                     placeholder="Número de celular. Ej: +56922222222"
                   />
                 </Form.Group>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                   <Form.Control
+                  name="email"
                     type="email"
                     placeholder="Correo electrónico. Ej: example@empresa.com"
                   />
@@ -60,7 +62,7 @@ function SectionContacto() {
                   <Form.Text style={{ fontSize: "20px", color: "#FFF" }}>
                     Servicio a Cotizar
                   </Form.Text>
-                  <Form.Control as="select" aria-label="Default select example">
+                  <Form.Control  name="select" as="select" aria-label="Default select example">
                     <option value="1">Desarrollo Web y Ecommerce</option>
                     <option value="2">Marketing Digital</option>
                     <option value="3">analitica y Performance</option>
@@ -68,7 +70,7 @@ function SectionContacto() {
                   </Form.Control>
                 </Form.Group>
                 <Form.Group className="mb-3">
-                  <Form.Control placeholder="Mensaje" as="textarea" rows={3} />
+                  <Form.Control name="mensaje" placeholder="Mensaje" as="textarea" rows={3} />
                 </Form.Group>
                 <Button
                   type="submit"
