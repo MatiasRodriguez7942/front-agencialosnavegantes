@@ -88,7 +88,7 @@ function SectionContacto() {
                 </Button> 
               </Form>
                
-              </form>
+             
             </Col>
           </Row>
         </Container>
