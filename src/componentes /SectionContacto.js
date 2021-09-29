@@ -30,7 +30,7 @@ function SectionContacto() {
               </h3>
             </Col>
             <Col sm={6}>
-              {/* <Form name="contacto"
+              <Form name="contacto"
                method="post"
                data-netlify="true"
                data-netlify-honeypot="bot-field"
@@ -86,32 +86,8 @@ function SectionContacto() {
                     style={{ marginTop: "5px", paddingLeft: "10px" }}
                   ></i>
                 </Button> 
-              </Form>*/}
-              <form
-                method="post"
-                netlify-honeypot="bot-field"
-                data-netlify="true"
-                name="contacto"
-              >
-                <input type="email" name="email" />
-                <input type="text" name="name" />
-
-                <input type="text" name="message" />
-                {/* <Button
-                  type="submit"
-                  style={{
-                    background: "transparent",
-                    borderColor: "transparent",
-                    color: "rgb(255, 254, 0)",
-                  }}
-                >
-                  Enviar Mensaje{" "}
-                  <i
-                    className="bi bi-arrow-right"
-                    style={{ marginTop: "5px", paddingLeft: "10px" }}
-                  ></i>
-                </Button> */}
-                <button>enviar</button>
+              </Form>
+               
               </form>
             </Col>
           </Row>
