@@ -21,9 +21,30 @@ function SectionInstagram() {
 
       <Swiper
         slidesPerView={6}
-        spaceBetween={1}
+        
         navigation={true}
-        className="mySwiper"
+        className="mySwiperInstagram"
+        breakpoints={{
+          "360": {
+            "slidesPerView": 2,
+            "spaceBetween": 20
+          },
+          "400": {
+            "slidesPerView": 2,
+            "spaceBetween": 20
+          },
+          "640": {
+            "slidesPerView": 2,
+            "spaceBetween": 20
+          },
+          "768": {
+            "slidesPerView": 4,
+            "spaceBetween": 40
+          },
+          "1024": {
+            "slidesPerView": 6,
+          }
+        }}
       >
         {data.map((item, i) => (
           <SwiperSlide key={i}>

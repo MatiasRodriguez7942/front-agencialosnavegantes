@@ -53,7 +53,7 @@ const sectionBannerHome = () => {
           style={{ alignItems: "center" }}
         >
           <Col sm={6} style={{ color: "#fff" }}>
-            <h1 style={{ color: "#fff", fontSize: "60px" }}>
+            <h1 style={{ color: "#fff", fontSize: "60px" }} className="encabezado">
               Navegantes de <br></br> Medios Digitales
             </h1>
             <br></br>
@@ -65,8 +65,8 @@ const sectionBannerHome = () => {
             >
               {Lista}
             </ul>
-            <p>{descripcion}</p>
-            <h3>{texto_pregunta}</h3>
+            <p style={{textAlign:"justify"}}>{descripcion}</p>
+            <h3 style={{textAlign:"justify"}}>{texto_pregunta}</h3>
             <i className="bi bi-chevron-down"></i>
 
             <Link
@@ -77,7 +77,7 @@ const sectionBannerHome = () => {
             </Link>
           </Col>
           <Col sm={6} style={{ color: "#fff", textAlign: "center" }}>
-            <img className="img-fluid" src={Imagen}></img>
+            <img className="img-fluid imagenBannerHome" src={Imagen}></img>
           </Col>
         </Row>
       </Container>

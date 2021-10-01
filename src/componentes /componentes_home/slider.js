@@ -38,7 +38,28 @@ const slider = () => {
               slidesPerView={3}
               spaceBetween={30}
               navigation={true}
-              className="mySwiper"
+              className="mySwiperSlider"
+              breakpoints={{
+                "360": {
+                  "slidesPerView": 2,
+                  "spaceBetween": 20
+                },
+                "400": {
+                  "slidesPerView": 2,
+                  "spaceBetween": 20
+                },
+                "640": {
+                  "slidesPerView": 2,
+                  "spaceBetween": 20
+                },
+                "768": {
+                  "slidesPerView": 4,
+                  "spaceBetween": 40
+                },
+                "1024": {
+                  "slidesPerView": 3,
+                }
+              }}
             >
               {Datos.map((item, i) => (
                 <SwiperSlide key={i}>

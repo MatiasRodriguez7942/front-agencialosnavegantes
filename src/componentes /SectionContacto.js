@@ -30,10 +30,9 @@ function SectionContacto() {
               </h3>
             </Col>
             <Col sm={6}>
-              <Form name="contacto"
+              <Form 
                method="post"
-               data-netlify="true"
-               data-netlify-honeypot="bot-field"
+              //  action="https://getform.io/f/bf3361ef-efaa-4730-885e-36921e09ea7d"
               >
                 <Form.Group className="mb-3">
                   <Form.Control name="nombre" type="text" placeholder="Nombre" />
@@ -63,10 +62,10 @@ function SectionContacto() {
                     Servicio a Cotizar
                   </Form.Text>
                   <Form.Control  name="select" as="select" aria-label="Default select example">
-                    <option value="1">Desarrollo Web y Ecommerce</option>
-                    <option value="2">Marketing Digital</option>
-                    <option value="3">analitica y Performance</option>
-                    <option value="4">Otros</option>
+                    <option value="DesarrolloWebyEcommerce">Desarrollo Web y Ecommerce</option>
+                    <option value="Marketing Digital">Marketing Digital</option>
+                    <option value="analiticayPerformance">analitica y Performance</option>
+                    <option value="Otros">Otros</option>
                   </Form.Control>
                 </Form.Group>
                 <Form.Group className="mb-3">

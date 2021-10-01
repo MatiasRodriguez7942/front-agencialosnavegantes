@@ -10,7 +10,7 @@ function sectionSomoPartners() {
       <Container className="contenedor-body">
         <Row style={{ justifyContent: "center", alignItems: "center" }}>
           <Col sm={6}>
-            <h1 style={{fontSize:"60px",fontWeight:"700",color:"#fff"}}>{data.titulo}</h1>
+            <h1 style={{fontSize:"60px",fontWeight:"700",color:"#fff"}} className="encabezado">{data.titulo}</h1>
             <br></br>
             <p style={{ textAlign: "justify" ,color:"#fff",}}>{data.descripcion1}</p>
             <p style={{ textAlign: "justify" ,color:"#fff",}}>{data.descripcion2}</p>
